@@ -1,18 +1,291 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Primeros Auxilios Básicos</title>
 
-    <link rel="stylesheet" href="css/Estilo.css">
-
-     <script src="js/Script.js" defer></script>
-
-
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+<header>
+  <div class="nav-inner">
+    <div class="brand"><span class="brand-mark"></span> Primeros Auxilios</div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul id="navList">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#que-son">Qué son</a></li>
+        <li><a href="#emergencias">Emergencias</a></li>
+        <li><a href="#botiquin">Botiquín</a></li>
+        <li><a href="#quiz">Autoevaluación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+ 
+<!-- HERO -->
+<div id="inicio">
+  <div class="hero">
+    <div>
+      <p class="eyebrow">Guía de referencia rápida</p>
+      <h1>Actuar bien en los primeros minutos salva vidas.</h1>
+      <p>Procedimientos claros y verificados para responder ante heridas, quemaduras, atragantamientos y otras emergencias comunes, mientras llega ayuda profesional.</p>
+      <div class="hero-cta">
+        <a href="#emergencias" class="btn btn-primary">Ver procedimientos</a>
+        <a href="#quiz" class="btn btn-ghost">Hacer autoevaluación</a>
+      </div>
+    </div>
+    <div class="hero-panel">
+      <div class="row"><span class="label">Emergencias médicas</span><span class="val">132</span></div>
+      <div class="row"><span class="label">Bomberos</span><span class="val">913</span></div>
+      <div class="row"><span class="label">Policía</span><span class="val">911</span></div>
+      <div class="row"><span class="label">Cruz Roja</span><span class="val">2222-5155</span></div>
+    </div>
+  </div>
+</div>
+ 
+<div class="ekg-wrap">
+  <svg viewBox="0 0 600 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 30 H180 L200 30 L215 8 L230 52 L245 30 L260 30 H600
+             M600 30 H780 L800 30 L815 8 L830 52 L845 30 L860 30 H1200"
+          fill="none" stroke="#D6483F" stroke-width="2"/>
+  </svg>
+</div>
+ 
+<!-- QUE SON -->
+<section id="que-son">
+  <div class="section-head">
+    <p class="eyebrow">Fundamentos</p>
+    <h2>¿Qué son los primeros auxilios?</h2>
+    <p>Son las medidas inmediatas que se aplican a una persona lesionada o enferma antes de que llegue atención médica profesional. Su objetivo es preservar la vida, evitar que la condición empeore y favorecer la recuperación. Todo se organiza en tres pasos: Proteger, Avisar y Socorrer (método PAS).</p>
+  </div>
+  <div class="pas-grid">
+    <div class="pas-card">
+      <span class="pas-num">01</span>
+      <h3>Proteger</h3>
+      <p>Verifica que el lugar sea seguro para ti y para la persona afectada antes de acercarte.</p>
+    </div>
+    <div class="pas-card">
+      <span class="pas-num">02</span>
+      <h3>Avisar</h3>
+      <p>Llama o pide a alguien que llame de inmediato a los números de emergencia.</p>
+    </div>
+    <div class="pas-card">
+      <span class="pas-num">03</span>
+      <h3>Socorrer</h3>
+      <p>Aplica el procedimiento adecuado según el tipo de emergencia, dentro de tus conocimientos.</p>
+    </div>
+  </div>
+</section>
+ 
+<!-- EMERGENCIAS -->
+<section id="emergencias">
+  <div class="section-head">
+    <p class="eyebrow">Procedimientos</p>
+    <h2>Emergencias comunes</h2>
+    <p>Toca cada tarjeta para ver los pasos a seguir. Recuerda que esto no sustituye una capacitación formal ni atención médica.</p>
+  </div>
+  <div class="emerg-grid" id="emergGrid">
+ 
+    <div class="emerg-card">
+      <button class="emerg-toggle">Heridas y cortes <span class="plus">+</span></button>
+      <div class="emerg-body">
+        <ol>
+          <li>Lávate las manos o usa guantes si es posible.</li>
+          <li>Limpia la herida con agua limpia.</li>
+          <li>Presiona con un paño limpio para detener el sangrado.</li>
+          <li>Cubre con una gasa o vendaje.</li>
+          <li>Busca atención médica si el corte es profundo o no deja de sangrar.</li>
+        </ol>
+      </div>
+    </div>
+ 
+    <div class="emerg-card">
+      <button class="emerg-toggle">Quemaduras <span class="plus">+</span></button>
+      <div class="emerg-body">
+        <ol>
+          <li>Aleja a la persona de la fuente de calor.</li>
+          <li>Enfría la zona con agua corriente tibia por 10-15 minutos.</li>
+          <li>No apliques hielo, pasta dental ni remedios caseros.</li>
+          <li>Cubre con un paño limpio y no adherente.</li>
+          <li>Busca atención médica si es extensa o profunda.</li>
+        </ol>
+      </div>
+    </div>
+ 
+    <div class="emerg-card">
+      <button class="emerg-toggle">Fracturas y esguinces <span class="plus">+</span></button>
+      <div class="emerg-body">
+        <ol>
+          <li>No muevas ni intentes acomodar la zona afectada.</li>
+          <li>Inmoviliza con una férula improvisada si es necesario.</li>
+          <li>Aplica frío envuelto en tela para reducir la inflamación.</li>
+          <li>Eleva la extremidad si es posible.</li>
+          <li>Traslada a la persona a un centro médico.</li>
+        </ol>
+      </div>
+    </div>
+ 
+    <div class="emerg-card">
+      <button class="emerg-toggle">Atragantamiento <span class="plus">+</span></button>
+      <div class="emerg-body">
+        <ol>
+          <li>Pregunta si la persona puede toser o hablar.</li>
+          <li>Si no puede respirar, colócate detrás y da 5 golpes entre los omóplatos.</li>
+          <li>Aplica la maniobra de Heimlich: compresiones abdominales hacia adentro y arriba.</li>
+          <li>Alterna golpes y compresiones hasta que el objeto salga.</li>
+          <li>Llama a emergencias si la persona pierde el conocimiento.</li>
+        </ol>
+      </div>
+    </div>
+ 
+    <div class="emerg-card">
+      <button class="emerg-toggle">Reanimación (RCP) <span class="plus">+</span></button>
+      <div class="emerg-body">
+        <ol>
+          <li>Verifica que el lugar sea seguro y que la persona no responde.</li>
+          <li>Llama a emergencias de inmediato.</li>
+          <li>Coloca a la persona boca arriba sobre superficie firme.</li>
+          <li>Realiza 30 compresiones torácicas seguidas de 2 respiraciones.</li>
+          <li>Continúa hasta que llegue ayuda o la persona reaccione.</li>
+        </ol>
+      </div>
+    </div>
+ 
+    <div class="emerg-card">
+      <button class="emerg-toggle">Desmayos <span class="plus">+</span></button>
+      <div class="emerg-body">
+        <ol>
+          <li>Recuesta a la persona y eleva sus piernas.</li>
+          <li>Afloja ropa ajustada en cuello y pecho.</li>
+          <li>Asegura ventilación y espacio alrededor.</li>
+          <li>Si no recupera el conocimiento en 1-2 minutos, llama a emergencias.</li>
+        </ol>
+      </div>
+    </div>
+ 
+    <div class="emerg-card">
+      <button class="emerg-toggle">Picaduras y mordeduras <span class="plus">+</span></button>
+      <div class="emerg-body">
+        <ol>
+          <li>Lava la zona con agua y jabón.</li>
+          <li>Retira el aguijón raspando, sin usar pinzas si es posible.</li>
+          <li>Aplica frío para reducir la inflamación.</li>
+          <li>Observa señales de reacción alérgica grave.</li>
+          <li>Busca atención médica ante mordeduras de animales.</li>
+        </ol>
+      </div>
+    </div>
+ 
+    <div class="emerg-card">
+      <button class="emerg-toggle">Convulsiones <span class="plus">+</span></button>
+      <div class="emerg-body">
+        <ol>
+          <li>Despeja el área de objetos peligrosos.</li>
+          <li>Coloca algo suave bajo la cabeza.</li>
+          <li>No sujetes a la persona ni le pongas nada en la boca.</li>
+          <li>Colócala de lado al terminar la convulsión.</li>
+          <li>Llama a emergencias si dura más de 5 minutos.</li>
+        </ol>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+ 
+<!-- BOTIQUIN -->
+<section id="botiquin">
+  <div class="section-head">
+    <p class="eyebrow">Preparación</p>
+    <h2>Botiquín básico</h2>
+    <p>Elementos esenciales que todo hogar, vehículo o institución debería tener a la mano.</p>
+  </div>
+  <div class="kit-grid">
+    <div class="kit-item">Guantes desechables</div>
+    <div class="kit-item">Gasas estériles</div>
+    <div class="kit-item">Vendas elásticas</div>
+    <div class="kit-item">Cinta adhesiva médica</div>
+    <div class="kit-item">Solución antiséptica</div>
+    <div class="kit-item">Tijeras y pinzas</div>
+    <div class="kit-item">Termómetro</div>
+    <div class="kit-item">Analgésicos básicos</div>
+    <div class="kit-item">Manta térmica</div>
+  </div>
+</section>
+ 
+<!-- QUIZ -->
+<section id="quiz">
+  <div class="section-head">
+    <p class="eyebrow">Ponte a prueba</p>
+    <h2>Autoevaluación</h2>
+    <p>Responde estas preguntas para repasar lo aprendido. No sustituye una certificación oficial.</p>
+  </div>
+ 
+  <div class="quiz-box" id="quizBox">
+    <div id="quizActive">
+      <div class="quiz-progress" id="quizProgress">Pregunta 1 de 5</div>
+      <div class="quiz-question" id="quizQuestion"></div>
+      <div class="quiz-options" id="quizOptions"></div>
+      <div class="quiz-feedback" id="quizFeedback"></div>
+      <div class="quiz-actions">
+        <button class="btn btn-primary" id="quizNext" disabled>Siguiente</button>
+      </div>
+    </div>
+ 
+    <div id="quizResult" class="quiz-result hidden">
+      <div class="score" id="quizScore">0/5</div>
+      <p id="quizScoreMsg">Resultado</p>
+      <div class="quiz-actions" style="justify-content:center; margin-top:1rem;">
+        <button class="btn btn-ghost" id="quizRestart">Repetir autoevaluación</button>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="section-head">
+    <p class="eyebrow">Escríbenos</p>
+    <h2>Contacto</h2>
+    <p>Este formulario es solo de demostración: no está conectado a ningún servidor ni envía datos reales.</p>
+  </div>
+  <div class="contact-grid">
+    <form id="contactForm">
+      <div>
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+      </div>
+      <div>
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+      </div>
+      <div>
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" placeholder="Escribe tu consulta o comentario" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="align-self:flex-start;">Enviar mensaje</button>
+      <p class="form-status" id="formStatus"></p>
+      <p class="form-note">// formulario de demostración, sin conexión a backend</p>
+    </form>
+ 
+    <div class="contact-side">
+      <h3>Números de emergencia</h3>
+      <div class="num-row"><span>Emergencias médicas</span><span class="n">132</span></div>
+      <div class="num-row"><span>Policía Nacional Civil</span><span class="n">911</span></div>
+      <div class="num-row"><span>Cuerpo de Bomberos</span><span class="n">913</span></div>
+      <div class="num-row"><span>Cruz Roja Salvadoreña</span><span class="n">2222-5155</span></div>
+    </div>
+  </div>
+</section>
+ 
+<footer>
+  Sitio informativo con fines educativos. No sustituye una capacitación oficial en primeros auxilios ni atención médica profesional.
+</footer>
     
+
 </body>
-</html>
+
