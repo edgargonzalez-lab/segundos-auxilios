@@ -1,10 +1,11 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeros Auxilios Básicos</title>
 
-    <script src="js/script.js"></script>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="Estilo.css">
 </head>
 
 <body>
@@ -27,6 +28,36 @@
     </nav>
   </div>
 </header>
+
+<!-- HERO -->
+<div id="inicio">
+  <div class="hero">
+    <div>
+      <p class="eyebrow">Guía de referencia rápida</p>
+      <h1>Actuar bien en los primeros minutos salva vidas.</h1>
+      <p>Procedimientos claros y verificados para responder ante heridas, quemaduras, atragantamientos y otras emergencias comunes, mientras llega ayuda profesional.</p>
+      <div class="hero-cta">
+        <a href="#emergencias" class="btn btn-primary">Ver procedimientos</a>
+        <a href="#quiz" class="btn btn-ghost">Hacer autoevaluación</a>
+      </div>
+    </div>
+    <div class="hero-panel">
+      <div class="row"><span class="label">Emergencias médicas</span><span class="val">132</span></div>
+      <div class="row"><span class="label">Bomberos</span><span class="val">913</span></div>
+      <div class="row"><span class="label">Policía</span><span class="val">911</span></div>
+      <div class="row"><span class="label">Cruz Roja</span><span class="val">2222-5155</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="ekg-wrap">
+  <svg viewBox="0 0 600 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 30 H180 L200 30 L215 8 L230 52 L245 30 L260 30 H600
+             M600 30 H780 L800 30 L815 8 L830 52 L845 30 L860 30 H1200"
+          fill="none" stroke="#D6483F" stroke-width="2"/>
+  </svg>
+</div>
+
 <!-- QUE SON -->
 <section id="que-son">
   <div class="section-head">
@@ -61,62 +92,7 @@
     </div>
   </div>
 </section>
- 
-<!-- HERO -->
-<div id="inicio">
-  <div class="hero">
-    <div>
-      <p class="eyebrow">Guía de referencia rápida</p>
-      <h1>Actuar bien en los primeros minutos salva vidas.</h1>
-      <p>Procedimientos claros y verificados para responder ante heridas, quemaduras, atragantamientos y otras emergencias comunes, mientras llega ayuda profesional.</p>
-      <div class="hero-cta">
-        <a href="#emergencias" class="btn btn-primary">Ver procedimientos</a>
-        <a href="#quiz" class="btn btn-ghost">Hacer autoevaluación</a>
-      </div>
-    </div>
-    <div class="hero-panel">
-      <div class="row"><span class="label">Emergencias médicas</span><span class="val">132</span></div>
-      <div class="row"><span class="label">Bomberos</span><span class="val">913</span></div>
-      <div class="row"><span class="label">Policía</span><span class="val">911</span></div>
-      <div class="row"><span class="label">Cruz Roja</span><span class="val">2222-5155</span></div>
-    </div>
-  </div>
-</div>
- 
-<div class="ekg-wrap">
-  <svg viewBox="0 0 600 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 30 H180 L200 30 L215 8 L230 52 L245 30 L260 30 H600
-             M600 30 H780 L800 30 L815 8 L830 52 L845 30 L860 30 H1200"
-          fill="none" stroke="#D6483F" stroke-width="2"/>
-  </svg>
-</div>
- 
-<!-- QUE SON -->
-<section id="que-son">
-  <div class="section-head">
-    <p class="eyebrow">Fundamentos</p>
-    <h2>¿Qué son los primeros auxilios?</h2>
-    <p>Son las medidas inmediatas que se aplican a una persona lesionada o enferma antes de que llegue atención médica profesional. Su objetivo es preservar la vida, evitar que la condición empeore y favorecer la recuperación. Todo se organiza en tres pasos: Proteger, Avisar y Socorrer (método PAS).</p>
-  </div>
-  <div class="pas-grid">
-    <div class="pas-card">
-      <span class="pas-num">01</span>
-      <h3>Proteger</h3>
-      <p>Verifica que el lugar sea seguro para ti y para la persona afectada antes de acercarte.</p>
-    </div>
-    <div class="pas-card">
-      <span class="pas-num">02</span>
-      <h3>Avisar</h3>
-      <p>Llama o pide a alguien que llame de inmediato a los números de emergencia.</p>
-    </div>
-    <div class="pas-card">
-      <span class="pas-num">03</span>
-      <h3>Socorrer</h3>
-      <p>Aplica el procedimiento adecuado según el tipo de emergencia, dentro de tus conocimientos.</p>
-    </div>
-  </div>
-</section>
- 
+
 <!-- EMERGENCIAS -->
 <section id="emergencias">
   <div class="section-head">
@@ -125,7 +101,7 @@
     <p>Toca cada tarjeta para ver los pasos a seguir. Recuerda que esto no sustituye una capacitación formal ni atención médica.</p>
   </div>
   <div class="emerg-grid" id="emergGrid">
- 
+
     <div class="emerg-card">
       <button class="emerg-toggle">Heridas y cortes <span class="plus">+</span></button>
       <div class="emerg-body">
@@ -138,7 +114,7 @@
         </ol>
       </div>
     </div>
- 
+
     <div class="emerg-card">
       <button class="emerg-toggle">Quemaduras <span class="plus">+</span></button>
       <div class="emerg-body">
@@ -151,7 +127,7 @@
         </ol>
       </div>
     </div>
- 
+
     <div class="emerg-card">
       <button class="emerg-toggle">Fracturas y esguinces <span class="plus">+</span></button>
       <div class="emerg-body">
@@ -164,7 +140,7 @@
         </ol>
       </div>
     </div>
- 
+
     <div class="emerg-card">
       <button class="emerg-toggle">Atragantamiento <span class="plus">+</span></button>
       <div class="emerg-body">
@@ -177,7 +153,7 @@
         </ol>
       </div>
     </div>
- 
+
     <div class="emerg-card">
       <button class="emerg-toggle">Reanimación (RCP) <span class="plus">+</span></button>
       <div class="emerg-body">
@@ -190,7 +166,7 @@
         </ol>
       </div>
     </div>
- 
+
     <div class="emerg-card">
       <button class="emerg-toggle">Desmayos <span class="plus">+</span></button>
       <div class="emerg-body">
@@ -202,7 +178,7 @@
         </ol>
       </div>
     </div>
- 
+
     <div class="emerg-card">
       <button class="emerg-toggle">Picaduras y mordeduras <span class="plus">+</span></button>
       <div class="emerg-body">
@@ -215,7 +191,7 @@
         </ol>
       </div>
     </div>
- 
+
     <div class="emerg-card">
       <button class="emerg-toggle">Convulsiones <span class="plus">+</span></button>
       <div class="emerg-body">
@@ -228,10 +204,10 @@
         </ol>
       </div>
     </div>
- 
+
   </div>
 </section>
- 
+
 <!-- BOTIQUIN -->
 <section id="botiquin">
   <div class="section-head">
@@ -251,7 +227,7 @@
     <div class="kit-item">Manta térmica</div>
   </div>
 </section>
- 
+
 <!-- QUIZ -->
 <section id="quiz">
   <div class="section-head">
@@ -259,7 +235,7 @@
     <h2>Autoevaluación</h2>
     <p>Responde estas preguntas para repasar lo aprendido. No sustituye una certificación oficial.</p>
   </div>
- 
+
   <div class="quiz-box" id="quizBox">
     <div id="quizActive">
       <div class="quiz-progress" id="quizProgress">Pregunta 1 de 5</div>
@@ -270,7 +246,7 @@
         <button class="btn btn-primary" id="quizNext" disabled>Siguiente</button>
       </div>
     </div>
- 
+
     <div id="quizResult" class="quiz-result hidden">
       <div class="score" id="quizScore">0/5</div>
       <p id="quizScoreMsg">Resultado</p>
@@ -280,7 +256,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- CONTACTO -->
 <section id="contacto">
   <div class="section-head">
@@ -306,7 +282,7 @@
       <p class="form-status" id="formStatus"></p>
       <p class="form-note">// formulario de demostración, sin conexión a backend</p>
     </form>
- 
+
     <div class="contact-side">
       <h3>Números de emergencia</h3>
       <div class="num-row"><span>Emergencias médicas</span><span class="n">132</span></div>
@@ -316,11 +292,11 @@
     </div>
   </div>
 </section>
- 
+
 <footer>
   Sitio informativo con fines educativos. No sustituye una capacitación oficial en primeros auxilios ni atención médica profesional.
 </footer>
-    
 
+<script src="Script.js"></script>
 </body>
-
+</html>
