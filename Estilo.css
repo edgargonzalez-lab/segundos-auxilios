@@ -1,4 +1,4 @@
-  :root{
+:root{
     --bg: #F7F7F4;
     --bg-alt: #FFFFFF;
     --ink: #1E2A24;
@@ -267,3 +267,5 @@
     nav ul.open{ display:flex; }
     .menu-toggle{ display:flex; }
   }
+
+  
