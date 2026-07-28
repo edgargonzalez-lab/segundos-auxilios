@@ -1,4 +1,4 @@
-    const menuToggle = document.getElementById('menuToggle');
+const menuToggle = document.getElementById('menuToggle');
   const navList = document.getElementById('navList');
   menuToggle.addEventListener('click', () => {
     const isOpen = navList.classList.toggle('open');
